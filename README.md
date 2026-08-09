@@ -20,6 +20,19 @@ This project was developed as part of my Code Alpha internship/task. It is a web
 
 ## 📂 Project Structure
 
+## 🚀 How to Run
+
+1. Download or clone this repository to your computer.
+2. Open the project folder.
+3. Locate the `index.html` file.
+4. Double-click on `index.html` to open it in your web browser.
+5. The project will start running in the browser.
+
+### 🌐 Run Online
+
+You can also run this project directly using **GitHub Pages** after deployment.
+
+
 ```text
 Code-Alpha-Project/
 │
