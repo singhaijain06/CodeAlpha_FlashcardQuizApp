@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eff6ff, #e0e7ff);
+    min-height: 100vh;
+    color: #1e293b;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.header h1 {
+    font-size: 38px;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+/* ================= MAIN ================= */
+
+.container {
+    width: 92%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+/* ================= FLASHCARD ================= */
+
+.flashcard-container {
+    width: 100%;
+}
+
+.flashcard {
+    background: #ffffff;
+    min-height: 330px;
+    border-radius: 24px;
+    padding: 45px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #dbeafe;
+
+    box-shadow:
+        0 15px 40px rgba(37, 99, 235, 0.12);
+}
+
+.card-label {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+
+#question {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+
+#answer {
+    display: none;
+
+    width: 100%;
+    max-width: 700px;
+
+    background: #eff6ff;
+    color: #334155;
+
+    padding: 18px 22px;
+    border-radius: 12px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+/* ================= SHOW ANSWER ================= */
+
+.show-answer {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 13px 25px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.show-answer:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* ================= NAVIGATION ================= */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 22px;
+}
+
+.navigation button {
+    background: white;
+    color: #2563eb;
+
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+
+    padding: 12px 25px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.navigation button:hover {
+    background: #eff6ff;
+    transform: translateY(-2px);
+}
+
+/* ================= COUNTER ================= */
+
+.counter {
+    text-align: center;
+
+    margin: 15px 0 30px;
+
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* ================= MANAGEMENT ================= */
+
+.management {
+    background: #ffffff;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.management h2 {
+    text-align: center;
+
+    color: #1e3a8a;
+
+    margin-bottom: 25px;
+
+    font-size: 22px;
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #334155;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    transition: 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 11px 20px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.action-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.add-btn {
+    background: #2563eb;
+}
+
+.edit-btn {
+    background: #f59e0b;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding-top: 25px;
+    }
+
+    .header h1 {
+        font-size: 29px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .flashcard {
+        min-height: 300px;
+        padding: 28px 18px;
+    }
+
+    #question {
+        font-size: 22px;
+    }
+
+    #answer {
+        font-size: 17px;
+    }
+
+    .navigation button {
+        padding: 10px 17px;
+    }
+
+    .management {
+        padding: 20px 16px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons button {
+        width: 100%;
+    }
+}
+/* ================= PROGRESS BAR ================= */
+
+.progress-container {
+    width: 100%;
+    max-width: 600px;
+    margin: -15px auto 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #dbeafe;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #4f46e5
+    );
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
